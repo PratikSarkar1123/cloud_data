@@ -2,6 +2,8 @@
 
 --------------------------docker installation steps------------------------
 
+https://docs.docker.com/engine/install/debian/
+
 1) sudo apt-get update
 
 2) sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ED65462EC8D5E4C5
@@ -20,6 +22,8 @@
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
   $(. /etc/os-release && echo "bookworm") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+[here there might be an issue because after committing the format changes, so above given link for debian installation step, from there take this command, add bookworm and continue]
 
 9) sudo apt-get update
 
